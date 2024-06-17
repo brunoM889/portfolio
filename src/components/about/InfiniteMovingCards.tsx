@@ -11,7 +11,7 @@ function cn(...inputs: ClassValue[]) {
 
 export const InfiniteMovingCards = ({
   direction = "left",
-  speed = "fast",
+  speed = "normal",
   pauseOnHover = true,
   className,
 }: {

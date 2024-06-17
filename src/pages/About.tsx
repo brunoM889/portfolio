@@ -60,7 +60,7 @@ function About({ setPage }: Props) {
             <div key={index}>{card.card}</div>
           ))}
         </div>
-        <InfiniteMovingCards className="min-[781px]:hidden" speed="slow" />
+        <InfiniteMovingCards className="min-[781px]:hidden" />
       </div>
 
       <MainBtn

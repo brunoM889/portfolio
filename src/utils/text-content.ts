@@ -149,7 +149,7 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
       {
         title: "expense tracker",
         description: [
-          "A simple expense management app that allows users to record their financial transactions, and then control them through an aesthetic and intuitive system.",
+          "The application is designed to facilitate the control of a person's expenses and income. It allows users to record their financial transactions and then analyze them through an aesthetic and intuitive UI.",
         ],
         image: "expenseTracker.PNG",
         techs: ["Next.js", "Node.js", "PostgreSQL"],
@@ -208,7 +208,7 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
       {
         title: "gestor de gastos",
         description: [
-          "Una app para la gestión de gastos sencilla que permite a los usuarios registrar sus movimientos financieros, para luego controlarlos mediante un sistema estético e intuitivo.",
+          "La aplicación se encarga de facilitar el control de gastos e ingresos de una persona. Permite a los usuarios registrar sus movimientos financieros, para luego analizarlos mediante una UI estética e intuitiva.",
         ],
         image: "expenseTracker.PNG",
         techs: ["Next.js", "Node.js", "PostgreSQL"],
