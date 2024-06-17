@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  animation: mainChargeAnimation 0.7s;
+  @apply w-full flex justify-center min-h-[100dvh];
+  background-color: #090909;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.chargeCard {
+  animation: imgChargeAnimation 1.5s;
+}
+@keyframes imgChargeAnimation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main {
+  animation: mainChargeAnimation 0.7s;
+  @apply grow w-full mt-[140px] pb-12 flex flex-col gap-4;
+}
+
+input,
+textarea {
+  transition: border-color 0.15s;
+  @apply placeholder:select-none px-1 outline-none resize-none max-[600px]:text-[14px];
+}
+
+@keyframes mainChargeAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  @apply text-[32px] font-bold;
+}
+
+p {
+  text-wrap: pretty;
+  @apply max-[600px]:text-[14px] max-[400px]:text-[12px];
+}
+
+.nav {
+  transition: border-color 0.3s, transform 0.3s, background-color 0.3s,
+    padding 0.3s;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #767676;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.arrow-animation {
+  animation: arrow-animation 2s ease-in-out infinite;
+}
+@keyframes arrow-animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
