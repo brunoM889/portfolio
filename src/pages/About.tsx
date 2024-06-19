@@ -1,7 +1,7 @@
 import { aboutTextContent } from "../utils/text-content";
 import { useAppState } from "../store/app-state";
-import { techCards } from "../components/about/TechCards";
-import { InfiniteMovingCards } from "../components/about/InfiniteMovingCards";
+import { techCards } from "../components/TechCards";
+import { InfiniteMovingCards } from "../components/InfiniteMovingCards";
 import { RightArrowIcon } from "../components/Icons";
 import MainBtn from "../components/MainBtn";
 import SocialsContainer from "../components/SocialsContainer";
@@ -56,9 +56,10 @@ function About({ setPage }: Props) {
       <div className="flex flex-col gap-4 mb-4">
         <h2 className="text-xl font-semibold">{textContent.h2}</h2>
         <div className="flex flex-wrap gap-2 max-[780px]:hidden">
-          {techCards.map((card, index) => (
-            <div key={index}>{card.card}</div>
-          ))}
+          {techCards.map(
+            (card, index) =>
+              card.tag !== "Express" && <div key={index}>{card.card}</div>
+          )}
         </div>
         <InfiniteMovingCards className="min-[781px]:hidden" />
       </div>

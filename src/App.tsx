@@ -6,21 +6,13 @@ import { useAppState } from "./store/app-state";
 import { useEffect, useState } from "react";
 import { footerTextContent } from "./utils/text-content";
 
-/*
-
-  dark #090909
-  darkHover #212121
-  light #dcdcdc
-  lightHover #bababa
-
-*/
-
 function App() {
   const [page, setPage] = useState(0);
   const { theme, lang } = useAppState();
 
   document.body.style.backgroundColor = theme ? "#090909" : "#dcdcdc";
   document.body.style.color = theme ? "#dcdcdc" : "#090909";
+
   //document.body.classList.add("transition-all");
   //document.body.classList.add("duration-300");
 

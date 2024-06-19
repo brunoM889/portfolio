@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import { techCards2 } from "./TechCards";
 import { ClassValue, clsx } from "clsx";
@@ -14,14 +12,18 @@ export const InfiniteMovingCards = ({
   speed = "normal",
   pauseOnHover = true,
   className,
+  items,
 }: {
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+  items?: (undefined | { tag: string; card: React.ReactNode })[];
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
+
+  const techCards = items ? items : techCards2;
 
   useEffect(() => {
     addAnimation();
@@ -85,8 +87,12 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {techCards2.map((item, idx) => {
-          return <div key={idx} className={`text-[#f0f0f0]`}>{item}</div>;
+        {techCards.map((item, idx) => {
+          return (
+            <div key={idx} className={`text-[#f0f0f0]`}>
+              {item?.card}
+            </div>
+          );
         })}
       </ul>
     </div>

@@ -110,6 +110,22 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
   if (lang) {
     return [
       {
+        title: "Blog",
+        description: [
+          "It's a simple website with a minimalist design inspired by Guillermo Rauch's blog, where I cover topics of technology and web development, as well as share my ideas and knowledge with others.",
+        ],
+        techs: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+        ],
+        link: "https://brunos-blog.vercel.app",
+        image: "blog.PNG",
+      },
+      {
         title: "atsnigram",
         description: [
           "A social media-style platform centered around images, featuring various functionalities, including the ability to upload posts with images and descriptions, delete posts, view both your own profile and others', and customize profile pictures.",
@@ -169,6 +185,22 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
     ];
   } else {
     return [
+      {
+        title: "Blog",
+        description: [
+          "Es una web sencilla con un diseño minimalista inspirado en el blog de Guillermo Rauch, donde abordo temas de tecnología y desarrollo web, además de compartir mis ideas y conocimientos con otros.",
+        ],
+        techs: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+        ],
+        link: "https://brunos-blog.vercel.app",
+        image: "blog.PNG",
+      },
       {
         title: "atsnigram",
         description: [

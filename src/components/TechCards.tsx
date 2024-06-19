@@ -1,4 +1,4 @@
-import { useAppState } from "../../store/app-state";
+import { useAppState } from "../store/app-state";
 import {
   ReactIcon,
   TailwindCSSIcon,
@@ -11,7 +11,8 @@ import {
   JavaScriptIcon,
   HTML5Icon,
   CSSIcon,
-} from "../Icons";
+  ExpressIcon,
+} from "./Icons";
 
 interface TechCardProps {
   tech: string;
@@ -64,6 +65,10 @@ export const techCards = [
     card: <NodeCard />,
   },
   {
+    tag: "Express",
+    card: <ExpressCard />,
+  },
+  {
     tag: "PostgreSQL",
     card: <PostgreSQLCard />,
   },
@@ -82,17 +87,50 @@ export const techCards = [
 ];
 
 export const techCards2 = [
-  <ReactCard />,
-  <NextjsCard2 />,
-  <TailwindCard2 />,
-  <TypeScriptCard />,
-  <NestCard />,
-  <NodejsCard2 />,
-  <PostgreSQLCard />,
-  <PrismaCard />,
-  <JavaScriptCard />,
-  <HTMLCard />,
-  <CSSCard />,
+  {
+    tag: "React",
+    card: <ReactCard />,
+  },
+  {
+    tag: "Next.js",
+    card: <NextjsCard2 />,
+  },
+  {
+    tag: "Tailwind CSS",
+    card: <TailwindCard2 />,
+  },
+  {
+    tag: "TypeScript",
+    card: <TypeScriptCard />,
+  },
+  {
+    tag: "NestJS",
+    card: <NestCard />,
+  },
+  {
+    tag: "Node.js",
+    card: <NodejsCard2 />,
+  },
+  {
+    tag: "PostgreSQL",
+    card: <PostgreSQLCard />,
+  },
+  {
+    tag: "Prisma",
+    card: <PrismaCard />,
+  },
+  {
+    tag: "JavaScript",
+    card: <JavaScriptCard />,
+  },
+  {
+    tag: "HTML",
+    card: <HTMLCard />,
+  },
+  {
+    tag: "CSS",
+    card: <CSSCard />,
+  },
 ];
 
 function ReactCard() {
@@ -102,6 +140,14 @@ function ReactCard() {
     </TechCard>
   );
 }
+function ExpressCard() {
+  return (
+    <TechCard tech="Express">
+      <ExpressIcon />
+    </TechCard>
+  );
+}
+
 function NextCard() {
   return (
     <TechCard tech="Next.js">
