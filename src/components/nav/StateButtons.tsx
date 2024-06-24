@@ -28,7 +28,7 @@ function StateButtons({ scroll }: { scroll: number }) {
             changeTheme(!theme);
           }}
           className={`${
-            theme ? "top-[4px]" : "top-[-150px]"
+            !theme ? "top-[4px]" : "top-[-150px]"
           } cursor-pointer transition-all duration-300 absolute h-[20px] w-[20px]`}
         />
 
@@ -37,7 +37,7 @@ function StateButtons({ scroll }: { scroll: number }) {
             changeTheme(!theme);
           }}
           className={`cursor-pointer ${
-            theme ? "top-[-150px]" : "top-[4px]"
+            !theme ? "top-[-150px]" : "top-[4px]"
           } transition-all duration-300 absolute h-[20px] w-[20px]`}
         />
       </button>
