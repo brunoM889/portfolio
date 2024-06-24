@@ -21,7 +21,7 @@ function SocialsContainer({ className }: Props) {
         href="https://github.com/BrunoM889"
         target="_blank"
       >
-        <GitHubIcon w="35px" h="35px" />
+        <GitHubIcon w="30px" h="30px" />
       </a>
       <a
         className="p-[2px] hover:opacity-50 transition-opacity cursor-pointer"
