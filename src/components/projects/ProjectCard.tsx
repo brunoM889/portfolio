@@ -79,7 +79,22 @@ function ProjectCard({ title, description, link, image, techs, video }: Props) {
             )}
           </div>
           {link && (
-            <a href={link} target="_blank" className="flex w-fit">
+            <a
+              href={link}
+              onClick={() => {
+                if (
+                  title === "atsnigram" ||
+                  title === "expense tracker" ||
+                  title === "gestor de gastos"
+                ) {
+                  alert(
+                    "Guest credentials:\n  Username: test@gmail.com\n  Password: 123"
+                  );
+                }
+              }}
+              target="_blank"
+              className="flex w-fit"
+            >
               <MainBtn text={"Link"} className="gap-[8px] pr-[2px] mb-[0px]">
                 <LinkIcon w="20px" h="20px" />
               </MainBtn>
