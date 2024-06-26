@@ -29,11 +29,26 @@ function ProjectCard({ title, description, link, image, techs, video }: Props) {
     }
   });
 
+  const showGuestCredentials = (tit: string) => {
+    if (
+      tit === "atsnigram" ||
+      tit === "expense tracker" ||
+      tit === "gestor de gastos"
+    ) {
+      alert("Guest credentials:\n  Username: test@gmail.com\n  Password: 123");
+    }
+  };
+
   return (
     <div className="flex gap-4 w-full flex-col relative chargeCard">
       <div className="min-h-[369px] w-full max-[825px]:min-h-[0px] rounded-md">
         {!video ? (
-          <a href={link} target="_blank" className="w-full rounded-md">
+          <a
+            onClick={() => showGuestCredentials(title)}
+            href={link}
+            target="_blank"
+            className="w-full rounded-md"
+          >
             <img
               className="w-full rounded-md"
               src={`/media/${image}`}
@@ -81,17 +96,7 @@ function ProjectCard({ title, description, link, image, techs, video }: Props) {
           {link && (
             <a
               href={link}
-              onClick={() => {
-                if (
-                  title === "atsnigram" ||
-                  title === "expense tracker" ||
-                  title === "gestor de gastos"
-                ) {
-                  alert(
-                    "Guest credentials:\n  Username: test@gmail.com\n  Password: 123"
-                  );
-                }
-              }}
+              onClick={() => showGuestCredentials(title)}
               target="_blank"
               className="flex w-fit"
             >
