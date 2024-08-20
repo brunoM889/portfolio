@@ -126,15 +126,6 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
         image: "blog.PNG",
       },
       {
-        title: "atsnigram",
-        description: [
-          "A social media-style platform centered around images, featuring various functionalities, including the ability to upload posts with images and descriptions, delete posts, view both your own profile and others', and customize profile pictures.",
-        ],
-        techs: ["Node.js", "PostgreSQL", "Next.js", "Prisma"],
-        link: "https://atsnigram.vercel.app/",
-        image: "atsnigram.PNG",
-      },
-      {
         title: "eduAI",
         description: [
           "The concept emerged as a kind of minigames where the user would provide their study material or the topics they want to study, and the AI would generate specific outputs to process them and generate an intuitive and playable interface.",
@@ -162,26 +153,6 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
         link: "https://barber-demo.vercel.app/",
         video: "barber.mp4",
       },
-      {
-        title: "expense tracker",
-        description: [
-          "The application is designed to facilitate the control of a person's expenses and income. It allows users to record their financial transactions and then analyze them through an aesthetic and intuitive UI.",
-        ],
-        image: "expenseTracker.PNG",
-        techs: ["Next.js", "Node.js", "PostgreSQL"],
-        link: "https://expensetracker89.vercel.app/",
-      },
-      {
-        title: "pacman game",
-        description: [
-          "I embarked on creating this game because it seemed like a fun and intriguing challenge. Essentially, it is a Pacman game created entirely with pure JavaScript and a bit of HTML and CSS, with approximately 90% of the code being JavaScript.",
-          "The development process was exciting. Solving challenges such as representing entities on a coordinate axis, handling collisions, and ensuring smooth movement of the ghosts served both as a learning experience and a creative challenge. I approached each feature from scratch, without being inspired by external sources.",
-          "The goal was precisely that, to test my knowledge and creativity in developing each functionality. Although my methods may not have always been the most efficient, they were undoubtedly authentic and reflect my own path of growth and discovery.",
-        ],
-        image: "pacman.PNG",
-        techs: ["JavaScript", "HTML", "CSS"],
-        link: "https://pacmangamebybruno.netlify.app/",
-      },
     ];
   } else {
     return [
@@ -200,15 +171,6 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
         ],
         link: "https://brunos-blog.vercel.app",
         image: "blog.PNG",
-      },
-      {
-        title: "atsnigram",
-        description: [
-          "Una plataforma estilo red social centrada en imagenes, cuenta con varias funcionalidades, incluyendo la capacidad de subir publicaciones con imágenes y descripciones, eliminar publicaciones, ver tanto el perfil propio como los de otros, y personalizar las fotos de perfil.",
-        ],
-        techs: ["Node.js", "PostgreSQL", "Next.js", "Prisma"],
-        link: "https://atsnigram.vercel.app/",
-        image: "atsnigram.PNG",
       },
       {
         title: "eduAI",
@@ -236,26 +198,6 @@ export const projectCardsTextContent = (lang: boolean): ProjectCard[] => {
         techs: ["Node.js", "Next.js", "PostgreSQL", "Prisma"],
         link: "https://barber-demo.vercel.app/",
         video: "barber.mp4",
-      },
-      {
-        title: "gestor de gastos",
-        description: [
-          "La aplicación se encarga de facilitar el control de gastos e ingresos de una persona. Permite a los usuarios registrar sus movimientos financieros, para luego analizarlos mediante una UI estética e intuitiva.",
-        ],
-        image: "expenseTracker.PNG",
-        techs: ["Next.js", "Node.js", "PostgreSQL"],
-        link: "https://expensetracker89.vercel.app/",
-      },
-      {
-        title: "pacman game",
-        description: [
-          "Emprendí la creación de este juego porque me pareció un desafío divertido e intrigante. Esencialmente, es un juego de Pacman creado enteramente con JavaScript puro y un poco de HTML y CSS, con aproximadamente el 90% del código siendo JavaScript.",
-          "El proceso de desarrollo fue emocionante. Resolver desafíos como representar entidades en un eje de coordenadas, manejar colisiones y asegurar un movimiento suave de los fantasmas, sirvió tanto como una experiencia de aprendizaje como un desafío creativo. Abordé cada característica desde cero, sin inspirarme en fuentes externas.",
-          "El objetivo era precisamente ese, poner a prueba mis conocimientos y creatividad en el desarrollo de cada funcionalidad. Aunque mis métodos pueden no haber sido siempre los más eficientes, fueron indudablemente auténticos y reflejan mi propio camino de crecimiento y descubrimiento.",
-        ],
-        image: "pacman.PNG",
-        techs: ["JavaScript", "HTML", "CSS"],
-        link: "https://pacmangamebybruno.netlify.app/",
       },
     ];
   }
